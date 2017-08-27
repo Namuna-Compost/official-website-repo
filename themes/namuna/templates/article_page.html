@@ -1,0 +1,30 @@
+<div class="inner-banner">
+  <div class="container">
+    <h2>
+        {{obj.title}}
+    </h2>
+    {% if obj.breadcrumbs %}    
+    <ul class="inner-breadcrumb">
+      <li><a href="{{SITEURL}}/index.html">Home</a></li>
+        {% for b in obj.breadcrumbs.split(',') %}
+          <li>{{b|capitalize}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+<!-- Inner Banner Wrapper End --> 
+<!-- Inner Wrapper Start -->
+<div class="inner-wrapper article-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+          {% if obj.title_line1 or obj.title_line2 %}
+        <h2>{{obj.title_line1}}<span>{{obj.title_line2}}</span></h2>
+        {% endif %}
+        {{obj.content|replace('IMAGEPATH', SITEURL+"/static/images")}}
+      </div>
+      <div class="col-sm-4 hidden-xs hidden-sm"> <img src="{{SITEURL}}/static/images/{{obj.image}}" alt="{{obj.title}}" class="tool"/> </div>
+    </div>
+  </div>
+</div>

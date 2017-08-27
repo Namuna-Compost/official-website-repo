@@ -3357,3 +3357,18 @@ section.why-choose .choose-list .list-cnt {
 	margin: 0 0 20px 0;
 }
 }
+
+
+/** Extra overrides **/
+.inner-wrapper.article-content img{
+	width: auto;
+	display: block;
+	text-align: center;
+	margin:0 auto;
+}
+
+.homepage.our-services .owl-item .services p{
+	height: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

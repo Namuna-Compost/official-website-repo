@@ -1448,7 +1448,7 @@ section.news {
 	z-index: -1;
 }
 .inner-banner {
-	background-image: url(https://placeholdit.imgix.net/~text?txtsize=50&bg=333&txtclr=cccccc&txt=1920%C3%97420&w=1920&h=420);
+	background-image: url(../images/inner_banner.jpg);
 	background-position: center center;
 	background-size: cover;
 	float: left;
@@ -3356,4 +3356,19 @@ section.why-choose .choose-list .list-cnt {
 .footer-wrapper .recent-post img {
 	margin: 0 0 20px 0;
 }
+}
+
+
+/** Extra overrides **/
+.inner-wrapper.article-content img{
+	width: auto;
+	display: block;
+	text-align: center;
+	margin:0 auto;
+}
+
+.homepage.our-services .owl-item .services p{
+	height: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
